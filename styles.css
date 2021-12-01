@@ -6,17 +6,17 @@
 
 @font-face{
     font-family: "Fleure-De-Leah";
-    src: url("./assets/font/Fleur_De_Leah/FleurDeLeah-Regular.ttf") format("ttf");
+    src: url("./assets/font/Fleur_De_Leah/FleurDeLeah-Regular.ttf") format("woff");
 }
 
 @font-face {
     font-family: "Coming-Soon";
-    src: url("./assets/font/Coming_Soon/ComingSoon-Regular.ttf") format("ttf");
+    src: url("./assets/font/Coming_Soon/ComingSoon-Regular.ttf") format("woff");
 }
 
 body {
     background-color: #FFFFF0;
-    scroll-behavior: smooth;
+   
     font-family: "Coming-Soon", sans-serif;
     font-size: 20px;
     color: #072A6C;
@@ -34,11 +34,15 @@ a:visited {
     color: #072A6C;
 }
 
-a:hover {
+.linkedin-link img {
+    width: 40px;
+    filter: none;
+}
+
+.linkedin-link {
     background-color: #009CA6;
-    color: #FFFFF0;
-    padding: 2px 10px 2px 10px;
-    border-radius: 15px;
+    padding: 10px;
+    border-radius: 40%;
 }
 
 .navbar-container {
@@ -58,8 +62,17 @@ a:hover {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 0 20px;
-    
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-family: "Coming-Soon", sans-serif;
+}
+
+.menu-container a:hover,
+button a:hover {
+    background-color: #009CA6;
+    color: #FFFFF0;
+    border-radius: 20px;
+    transition: 0.2s;
 }
 
 nav ul {
@@ -72,8 +85,6 @@ nav ul li {
     padding: 5px 20px 5px 20px;
 }
 
-
-
 .home {
     display: block;
     height: 600px; 
@@ -81,18 +92,19 @@ nav ul li {
     font-family: sans-serif;  
     color: #072A6C;
     text-align: left;
-    padding: 120px 60px 250px 60px;
+    padding: 100px 60px 200px 60px;
+    border-bottom: 8px double #009CA6;
 }
 
 .home h1 {
     align-self: center;
-    font-family: 'Fleur De Leah', cursive;
-    font-size: 150px;
+    font-family: "Fleur De Leah", cursive;
+    font-size: 125px;
 }
 
 .text-gradient-1,
 .text-gradient-2 {
-    color: #072A6C; /* For non-webkit browsers */
+    color: #072A6C; 
     background: linear-gradient(to bottom right, #072A6C, #009CA6, #FFFFF0);
     background-size: cover;
     -webkit-background-clip: text;
@@ -103,14 +115,25 @@ nav ul li {
 
 .home h2 {
     align-self: center;
-    font-family: 'Fleur De Leah', cursive;
-    font-size: 70px;
+    font-family: "Fleur De Leah", cursive;
+    font-size: 60px;
 }
 
 .home p {
-    font-size: 15px;
-    margin-top: 60px;
-    font-family: 'Coming Soon', cursive;
+    font-size: 20px;
+    margin-top: 30px;
+    font-family: "Coming Soon", cursive;
+    font-weight: bold;
+}
+
+.home-contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
 }
 
 article {
@@ -122,7 +145,7 @@ article {
     width: 100%;
     background-color: #FFFFF0;
     color: #072A6C;
-    
+    font-family: "Coming-Soon", sans-serif;
 }
 
 .section-grid {
@@ -132,12 +155,12 @@ article {
     justify-content: space-between;
     width: 700px;
     background-color: #FFFFF0;
-    border: 2px solid #009CA6;
-    border-radius: 10px;
-    
+    padding: 70px 0px;
 }
 
-
+.inline-link a:hover {
+    background-color: #009CA6;
+}
 
 section {
     border-radius: 0%;
@@ -156,6 +179,11 @@ section h1 {
     padding: 20px 30px;
 }
 
+figure img {
+    width: 200px;
+    border-radius: 50px;
+}
+
 button {
     display: flex;
     justify-content: center;
@@ -165,8 +193,32 @@ button {
     background-color: #009CA6;
     border: 1px solid #009CA6;
     border-radius: 15px;
-    padding: 25px 25px;
+    padding: 20px 20px;
     margin-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+    background-color: #072A6C;
+    color: #FFFFF0;
+    padding: 20px;
+}
+
+.contact-me {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.copyright {
+    padding: 10px;
 }
 
 
