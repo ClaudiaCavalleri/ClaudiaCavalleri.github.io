@@ -16,7 +16,6 @@
 
 body {
     background-color: #FFFFF0;
-   
     font-family: "Coming-Soon", sans-serif;
     font-size: 20px;
     color: #072A6C;
@@ -44,11 +43,12 @@ a:visited {
     padding: 10px;
     border-radius: 40%;
 }
-
+                                                       /* Navigation bar */
 .navbar-container {
     display: flex;
     position: fixed;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 50px;
     background-color: #FFFFF0;
@@ -62,9 +62,9 @@ a:visited {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 10px 30px;
     border-radius: 20px;
     font-family: "Coming-Soon", sans-serif;
+    font-weight: bold;
 }
 
 .menu-container a:hover,
@@ -82,16 +82,21 @@ nav ul {
 
 nav ul li {
     float: right;
-    padding: 5px 20px 5px 20px;
+    padding: 0px 20px;
+    margin-right: 20px;
+    background-color:#FFFFF0;
+    border-radius: 20px;
 }
-
+                                                                 /* Home */
 .home {
     display: block;
-    height: 600px; 
-    font-style: bold;
+    background: url(assets/img/GHGardone_GardaLake.jpg) no-repeat scroll;
+    background-position: 0px 50px;
+    background-size: cover;
+    height: 600px;
     font-family: sans-serif;  
     color: #072A6C;
-    text-align: left;
+    text-align: right;
     padding: 100px 60px 200px 60px;
     border-bottom: 8px double #009CA6;
 }
@@ -100,17 +105,6 @@ nav ul li {
     align-self: center;
     font-family: "Fleur De Leah", cursive;
     font-size: 125px;
-}
-
-.text-gradient-1,
-.text-gradient-2 {
-    color: #072A6C; 
-    background: linear-gradient(to bottom right, #072A6C, #009CA6, #FFFFF0);
-    background-size: cover;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
 }
 
 .home h2 {
@@ -129,13 +123,13 @@ nav ul li {
 .home-contact-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
-    width: 20%;
-    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
     align-items: center;
     margin-top: 30px;
 }
-
+                                             /* Arcticle */
 article {
     display: flex;
     flex-direction: column;
@@ -155,54 +149,43 @@ article {
     justify-content: space-between;
     width: 700px;
     background-color: #FFFFF0;
-    padding: 70px 0px;
-}
-
-.inline-link a:hover {
-    background-color: #009CA6;
+    padding: 20px;
 }
 
 section {
-    border-radius: 0%;
-    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    padding: 50;
+    height: fit-content;
     text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #009CA6;
+    border-radius: 50px;
 }
 
 section h1 {
+    font-weight: bold;
     padding: 20px 30px;
     border-bottom: 1px solid #009CA6;
 }
 
-.section-text {
-    padding: 20px 30px;
+.section-text p {
+    padding: 20px;
 }
 
 figure img {
     width: 200px;
+    padding: 20px;
     border-radius: 50px;
 }
-
-button {
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: bold;
-    color: #FFFFF0;
-    background-color: #009CA6;
-    border: 1px solid #009CA6;
-    border-radius: 15px;
-    padding: 20px 20px;
-    margin-bottom: 20px;
-}
-
-footer {
+                                                /* Footer */
+footer {               
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 400px;
     background-color: #072A6C;
     color: #FFFFF0;
@@ -214,7 +197,7 @@ footer {
     margin: 0 auto;
     text-align: center;
     font-size: 20px;
-    padding: 15px;
+    padding: 40px;
 }
 
 .copyright {
