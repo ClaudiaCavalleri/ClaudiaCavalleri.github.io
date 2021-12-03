@@ -33,6 +33,10 @@ a:visited {
     color: #072A6C;
 }
 
+.logo a:link {
+    color: #FFFFF0;
+}
+
 .linkedin-link img {
     width: 40px;
     filter: none;
@@ -41,7 +45,7 @@ a:visited {
 .linkedin-link {
     background-color: #009CA6;
     padding: 10px;
-    border-radius: 40%;
+    border-radius: 20px;
 }
                                                        /* Navigation bar */
 .navbar-container {
@@ -51,9 +55,22 @@ a:visited {
     align-items: center;
     width: 100%;
     height: 50px;
-    background-color: #FFFFF0;
+    background-color: transparent;
     border-top: 5px solid #009CA6;
     
+}
+
+.logo {
+    display: flex;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px 20px;
+    color: #FFFFF0;
+    background-color: #009CA6;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-family: cursive, fantasy, sans-serif;
 }
 
 .menu-container {
@@ -62,14 +79,15 @@ a:visited {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    background-color: #009CA6;
     border-radius: 20px;
     font-family: "Coming-Soon", sans-serif;
     font-weight: bold;
+    
 }
 
 .menu-container a:hover,
 button a:hover {
-    background-color: #009CA6;
     color: #FFFFF0;
     border-radius: 20px;
     transition: 0.2s;
@@ -82,22 +100,20 @@ nav ul {
 
 nav ul li {
     float: right;
-    padding: 0px 20px;
-    margin-right: 20px;
-    background-color:#FFFFF0;
+    padding: 0px 10px;
+    margin-right: 10px;
     border-radius: 20px;
 }
                                                                  /* Home */
 .home {
     display: block;
     background: url(assets/img/GHGardone_GardaLake.jpg) no-repeat scroll;
-    background-position: 0px 50px;
     background-size: cover;
-    height: 600px;
+    height: 580px;
     font-family: sans-serif;  
     color: #072A6C;
     text-align: right;
-    padding: 100px 60px 200px 60px;
+    padding: 50px 60px 150px 60px;
     border-bottom: 8px double #009CA6;
 }
 
@@ -174,7 +190,14 @@ section h1 {
     padding: 20px;
 }
 
+.Portfolio {
+    background-color: #009CA6;
+    color: #FFFFF0;
+}
 
+.Portfolio h1 {
+    border-bottom: 1px solid #FFFFF0;
+}
 
 figure img {
     width: 200px;
@@ -205,6 +228,7 @@ address {
 address a:link {
     color: #FFFFF0;
 }
+
 
 address a:hover {
     color: #009CA6;
