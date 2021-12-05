@@ -50,6 +50,7 @@ a:visited {
                                                        /* Navigation bar */
 .navbar-container {
     display: flex;
+    display: -webkit-flex;
     position: fixed;
     justify-content: space-between;
     align-items: center;
@@ -62,6 +63,7 @@ a:visited {
 
 .logo {
     display: flex;
+    display: -webkit-flex;
     margin-left: 50px;
     font-size: 20px;
     font-weight: 900;
@@ -75,6 +77,7 @@ a:visited {
 
 .menu-container {
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -95,6 +98,7 @@ button a:hover {
 
 nav ul {
     display: flex;
+    display: -webkit-flex;
     list-style-type: none;
 }
 
@@ -138,6 +142,7 @@ nav ul li {
 
 .home-contact-container {
     display: flex;
+    display: -webkit-flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
@@ -148,6 +153,7 @@ nav ul li {
                                              /* Arcticle */
 article {
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -160,16 +166,19 @@ article {
 
 .section-grid {
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 900px;
+    flex: 1;
+    width: 90%;
     background-color: #FFFFF0;
     padding: 20px;
 }
 
 section {
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     width: 100%;
     height: fit-content;
@@ -207,6 +216,7 @@ figure img {
                                                 /* Footer */
 footer {               
     display: flex;
+    display: -webkit-flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
@@ -254,14 +264,19 @@ body {
     justify-content: center;
 }
 
+.logo {
+    display: none;
+}
+
 .menu-comtainer: {
     justify-content: center;
 }
 
 .home {
-    background-image: url();
+
     background-position: top right;
     background-size: 100%;
+    width: half of the height;
     height: fit-content;
 }
 
