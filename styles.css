@@ -140,7 +140,7 @@ header {
 .home {
     display: block;
     background: url(assets/img/Mobile-GHGardone-GardaLake.jpg) no-repeat scroll top right;
-    background-size: 100%;
+    background-size: stretch;
     height: 100%;
     width: 100%;
     font-family: sans-serif;  
