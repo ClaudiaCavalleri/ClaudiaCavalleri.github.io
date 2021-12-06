@@ -61,7 +61,7 @@ header {
     display: flex;
     display: -webkit-flex;
     position: fixed;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     height: 80px;
@@ -76,45 +76,75 @@ header {
 .menu-container {
     display: flex;
     display: -webkit-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    list-style-type: none;
+    justify-content: flex-start;
     align-items: center;
+
+    margin-left: 20px;
     background-color: #009CA6;
+    padding: 10px 30px;
     border-radius: 20px;
+    text-align:center;
     font-family: "Coming-Soon", sans-serif;
     font-weight: bold;
 }
 
-.menu-container a:hover,
-button a:hover {
-    color: #FFFFFF;
-    border-radius: 20px;
-    transition: 0.2s;
+
+
+.menu {
+    display: none;
 }
 
-nav ul {
+.dropdown:hover .menu {
     display: flex;
     display: -webkit-flex;
+
+    flex-direction: column;
+
     list-style-type: none;
+    padding: 10px 10px;
+
+    position: absolute;
+    top: 100%;
+    left: -50%;
+
+    background-color: #009CA6;
+    border-radius: 15px;
+
+    z-index: 1;
 }
 
-nav ul li {
-    float: right;
-    padding: 0px 10px;
-    margin-right: 10px;
-    border-radius: 20px;
+.menu li {
+    list-style-type: none;
+    border-bottom: 1px solid #FFF;
+    margin: 5px;
+    text-align: center;
+  }
+  
+.menu li:last-of-type {
+    border-bottom: none;
+  }
+
+.dropdown {
+    position: relative;
 }
+
+.dropdown > span {
+    z-index: 2;
+    position: relative;
+}
+
+
                                                                  /* Home */
 .home {
     display: block;
-    background: url(assets/img/GHGardone_GardaLake.jpg) no-repeat scroll top right;
-    background-size: 100%;
-    height: 580px;
+    background: url(assets/img/Mobile-GHGardone-GardaLake.jpg) no-repeat scroll top right;
+    background-size: cover;
+    height: fit-content;
     font-family: sans-serif;  
     color: #072A6C;
     text-align: right;
-    padding: 50px 60px 150px 60px;
+    padding: 50px 60px;
     border-bottom: 4px solid #009CA6;
 }
 
@@ -276,12 +306,15 @@ address a:hover {
         justify-content: center;
     }
 
-    .home {
+    .menu-container a:hover {
+        color: #FFFFFF;
+        border-radius: 20px;
+        transition: 0.2s;
+    }
 
-        background-position: top right;
-        background-size: 100%;
-        width: half of the height;
-        height: fit-content;
+    .home {
+        background-image: url(assets/img/GHGardone_GardaLake.jpg) no-repeat scroll top right;
+        padding: 50px 60px 100px 60px;
     }
 
 
