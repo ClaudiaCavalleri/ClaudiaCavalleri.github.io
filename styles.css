@@ -15,7 +15,10 @@
 }
 
 body {
-    background-color: #FFFFF0;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    background-color: #FFFFFF;
     font-family: "Coming-Soon", sans-serif;
     font-size: 20px;
     color: #072A6C;
@@ -34,7 +37,7 @@ a:visited {
 }
 
 .logo a:link {
-    color: #FFFFF0;
+    color: #FFFFFF;
 }
 
 .linkedin-link img {
@@ -47,32 +50,27 @@ a:visited {
     padding: 10px;
     border-radius: 20px;
 }
+
+header {
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+}
                                                        /* Navigation bar */
 .navbar-container {
     display: flex;
     display: -webkit-flex;
     position: fixed;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50px;
+    height: 80px;
     background-color: transparent;
-    border-top: 5px solid #009CA6;
-    
+    border-top: 5px solid #009CA6; 
 }
 
 .logo {
-    display: flex;
-    display: -webkit-flex;
-    margin-left: 50px;
-    font-size: 20px;
-    font-weight: 900;
-    padding: 5px 20px;
-    color: #FFFFF0;
-    background-color: #009CA6;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    font-family: cursive, fantasy, sans-serif;
+    display: none;
 }
 
 .menu-container {
@@ -86,12 +84,11 @@ a:visited {
     border-radius: 20px;
     font-family: "Coming-Soon", sans-serif;
     font-weight: bold;
-    
 }
 
 .menu-container a:hover,
 button a:hover {
-    color: #FFFFF0;
+    color: #FFFFFF;
     border-radius: 20px;
     transition: 0.2s;
 }
@@ -111,7 +108,7 @@ nav ul li {
                                                                  /* Home */
 .home {
     display: block;
-    background: url(assets/img/GHGardone_GardaLake.jpg) no-repeat scroll top left;
+    background: url(assets/img/GHGardone_GardaLake.jpg) no-repeat scroll top right;
     background-size: 100%;
     height: 580px;
     font-family: sans-serif;  
@@ -159,7 +156,7 @@ article {
     justify-content: flex-start;
     height: fit-content;
     width: 100%;
-    background-color: #FFFFF0;
+    background-color: #FFFFFF;
     color: #072A6C;
     font-family: "Coming-Soon", sans-serif;
 }
@@ -172,7 +169,7 @@ article {
     justify-content: space-between;
     flex: 1;
     width: 90%;
-    background-color: #FFFFF0;
+    background-color: #FFFFFF;
     padding: 20px;
 }
 
@@ -201,11 +198,11 @@ section h1 {
 
 .Portfolio {
     background-color: #009CA6;
-    color: #FFFFF0;
+    color: #FFFFFF;
 }
 
 .Portfolio h1 {
-    border-bottom: 1px solid #FFFFF0;
+    border-bottom: 1px solid #FFFFFF;
 }
 
 figure img {
@@ -221,14 +218,15 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
     height: 400px;
     background-color: #072A6C;
-    color: #FFFFF0;
+    color: #FFFFFF;
     padding: 20px;
 }
 
 address {
-    width: 900px;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
     font-size: 20px;
@@ -236,7 +234,7 @@ address {
 }
 
 address a:link {
-    color: #FFFFF0;
+    color: #FFFFFF;
 }
 
 
@@ -248,37 +246,43 @@ address a:hover {
     padding: 10px;
 }
 
-                                            /* Mobile Style */
+                                            /* Desktop Style */
             
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 800px) {
 
-body {
-    display: flex;
-    flex-wrap: wrap;
-}
+    .navbar-container {
+        display: flex;
+        height: 50px;
+        background-color: #FFFFFF;
+        justify-content: space-between;
+    }
 
-.navbar-container {
-    display: flex;
-    height: 80px;
-    background-color: #FFFFF0;
-    justify-content: center;
-}
+    .logo {
+        display: flex;
+        display: -webkit-flex;
+        margin-left: 50px;
+        font-size: 20px;
+        font-weight: 900;
+        padding: 5px 20px;
+        color: #FFFFFF;
+        background-color: #009CA6;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        font-family: cursive, fantasy, sans-serif;
+    }
 
-.logo {
-    display: none;
-}
 
-.menu-comtainer: {
-    justify-content: center;
-}
+    .menu-comtainer {
+        justify-content: center;
+    }
 
-.home {
+    .home {
 
-    background-position: top right;
-    background-size: 100%;
-    width: half of the height;
-    height: fit-content;
-}
+        background-position: top right;
+        background-size: 100%;
+        width: half of the height;
+        height: fit-content;
+    }
 
 
 
