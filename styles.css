@@ -138,9 +138,13 @@ header {
 
                                                                  /* Home */
 .home {
-    display: block;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
     background: url(assets/img/Mobile-GHGardone-GardaLake.jpg) no-repeat scroll top right;
-    background-size: stretch;
+    background-size: 100%;
     height: 100%;
     width: 100%;
     font-family: sans-serif;  
@@ -148,21 +152,24 @@ header {
     text-align: right;
     padding: 50px 60px;
     border-bottom: 4px solid #009CA6;
+
+    justify-content: flex-end;
+    align-items: space-around;
 }
 
-.home h1 {
+.name {
     align-self: center;
     font-family: "Fleur De Leah", cursive;
     font-size: 125px;
 }
 
-.home h2 {
+.profile {
     align-self: center;
     font-family: "Fleur De Leah", cursive;
     font-size: 60px;
 }
 
-.home p {
+.description {
     font-size: 20px;
     margin-top: 30px;
     font-family: "Coming Soon", cursive;
@@ -178,6 +185,16 @@ header {
     justify-content: flex-end;
     align-items: center;
     margin-top: 30px;
+}
+
+.name,
+.profile,
+.description {
+    display: flex;
+    display: -webkit-flex;
+
+    justify-content: flex-end;
+
 }
                                              /* Arcticle */
 article {
