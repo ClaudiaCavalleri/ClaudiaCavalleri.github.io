@@ -142,6 +142,7 @@ header {
     background: url(assets/img/Mobile-GHGardone-GardaLake.jpg) no-repeat scroll top right;
     background-size: cover;
     height: 100%;
+    width: 100%;
     font-family: sans-serif;  
     color: #072A6C;
     text-align: right;
