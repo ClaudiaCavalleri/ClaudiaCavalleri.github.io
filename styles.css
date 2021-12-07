@@ -66,8 +66,8 @@ header {
     position: fixed;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
-    height: 10%;
+
+    
     background-color: transparent;
     border-top: 5px solid #009CA6; 
 }
