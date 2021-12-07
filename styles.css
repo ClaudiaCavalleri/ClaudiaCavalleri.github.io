@@ -160,14 +160,14 @@ header {
 .home h1 {
     align-self: center;
     font-family: "Fleur De Leah", cursive;
-    font-size: 125px;
+    font-size: 6em;
     border: 1px solid red;
 }
 
 .home h2 {
     align-self: center;
     font-family: "Fleur De Leah", cursive;
-    font-size: 60px;
+    font-size: 3em;
     border: 1px solid red;
 }
 
