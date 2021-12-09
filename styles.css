@@ -253,9 +253,9 @@ section h1 {
 }
 
 figure img {
-    width: 200px;
+    width: 250px;
     padding: 20px;
-    border-radius: 50px;
+    border-radius: 50%;
 }
 
 
