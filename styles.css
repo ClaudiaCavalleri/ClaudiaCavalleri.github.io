@@ -201,10 +201,10 @@ article {
     justify-content: flex-start;
     height: fit-content;
     width: 100%;
+
     background-color: #FFFFFF;
     color: #072A6C;
     font-family: "Coming-Soon", sans-serif;
-    border: 1px solid red;
 }
 
 .section-grid {
@@ -217,7 +217,6 @@ article {
     width: 90%;
     background-color: #FFFFFF;
     padding: 20px;
-    border: 1px solid red;
 }
 
 section {
@@ -231,6 +230,7 @@ section {
     margin: 20px;
     border: 2px solid #009CA6;
     border-radius: 50px;
+    box-shadow: 4px 4px 4px #00727a;
 }
 
 section h1 {
@@ -258,6 +258,8 @@ figure img {
     border-radius: 50px;
 }
 
+
+
                                                 /* Footer */
 footer {    
     display: flex;
@@ -267,8 +269,6 @@ footer {
 
     background-color: #072A6C;
     color: #FFFFFF;
-    
-    border: 1px solid red;
 }
 
 .footer-container {
@@ -276,31 +276,75 @@ footer {
     width: 90%;
     margin: 0 auto;
     text-align: center;
-    
-    border: 1px solid red;
+    font-size: 18px;
 }
 
-address {
-    display: block;
+.form-container {
     margin: 0 auto;
-    text-align: center;
-    font-size: 15px;
-    margin: 2%;
-    border: 1px solid red;
+    border-radius: 3px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
 }
 
-address a:link {
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.form-row input,
+.form-row textarea {
+    background-color: #062257;
+    font-family: "Coming Soon", cursive;
+    color: #FFFFFF;
+    font-size: 13px;
+    width: 70%; 
+    border: 2px solid #00727a;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #062257;
+}
+
+.form-row textarea {
+    min-height: 100px;
+    resize: none;
+}
+
+.form-row button {
+    display: none;
+    margin: 0 auto;
+    background-color: #009CA6;
+    border-radius: 15px;
+}
+
+.form-row p {
+    margin: 0 auto;
+}
+
+#last-linkedin {
     color: #FFFFFF;
 }
 
-
-address a:hover {
+#s2i:hover,
+#last-linkedin:hover {
     color: #009CA6;
+}
+
+#s2i:active,
+#last-linkedin:active {
+    color: purple;
+}
+
+#s2i:visited,
+#last-linkedin:visited {
+    color: #00727a;
 }
 
 .copyright {
     font-size: 12px;
-    border: 1px solid red;
+    margin-bottom: 20px;
 }
 
                                             /* Desktop Style */
@@ -345,7 +389,6 @@ address a:hover {
         padding: 50px 60px 100px 60px;
         border-bottom: 4px solid #009CA6;
     }
-
 
 
 }
