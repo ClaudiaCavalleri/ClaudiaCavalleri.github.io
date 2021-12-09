@@ -68,8 +68,8 @@ header {
     justify-content: flex-start;
     align-items: center;
 
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 15px;
+    margin-top: 15px;
     background-color: #009CA6;
     padding: 10px 20px;
     border-radius: 15px;
@@ -95,8 +95,8 @@ header {
     padding-top: 60px;
 
     position: absolute;
-    top: -25%;
-    left: -50%;
+    top: -40%;
+    left: -73%;
     border-radius: 15px;
 
     background-color: #009CA6;
@@ -313,13 +313,19 @@ footer {
 }
 
 .form-row button {
-    display: none;
+    display: none;      /* Change this while the back-end is available... */
     margin: 0 auto;
     background-color: #009CA6;
+    padding: 10px 20px;
     border-radius: 15px;
+    border: none;
+    font-family: "Coming Soon", cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
 }
 
-.form-row p {
+.form-row p {          /* ....and this. */
     margin: 0 auto;
 }
 
