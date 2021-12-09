@@ -266,7 +266,6 @@ footer {
     display: -webkit-flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: flex-start;
     background-color: #072A6C;
     color: #FFFFFF;
 }
@@ -301,7 +300,7 @@ footer {
     font-family: "Coming Soon", cursive;
     color: #FFFFFF;
     font-size: 13px;
-    width: 80%; 
+    width: 75%; 
     border: 2px solid #00727a;
     border-radius: 5px;
     box-shadow: 2px 2px 4px #062257;
