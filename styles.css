@@ -292,7 +292,7 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 5px;
 }
 
 .form-row input,
