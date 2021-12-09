@@ -266,7 +266,7 @@ footer {
     display: -webkit-flex;
     flex-wrap: wrap;
     flex-direction: column;
-
+    justify-content: flex-start;
     background-color: #072A6C;
     color: #FFFFFF;
 }
