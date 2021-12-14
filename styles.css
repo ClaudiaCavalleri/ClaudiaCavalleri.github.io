@@ -10,8 +10,8 @@
 }
 
 @font-face {
-    font-family: "Coming-Soon";
-    src: url("./assets/font/Coming_Soon/ComingSoon-Regular.ttf") format("woff");
+    font-family: "Nunito-Sans";
+    src: url("./assets/font/Nunito_Sans/NunitoSans-Light.ttf") format("woff");
 }
 
 body {
@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     width: 100%;
     background-color: #FFFFFF;
-    font-family: "Coming-Soon", sans-serif;
+    font-family: "Nunito-Sans", sans-serif;
     font-size: 20px;
     color: #072A6C;
 }
@@ -71,10 +71,17 @@ header {
     border-radius: 15px;
     
     text-align: center;
-    font-family: "Coming-Soon", sans-serif;
+    font-family: "Nunito-Sans", sans-serif;
     font-size: 1em;
     font-weight: bold;
 }
+
+.line {
+    width: 35px;
+    height: 5px;
+    background-color: #072A6C;
+    margin: 6px 0;
+  }
 
 .menu {
     display: none;
@@ -88,12 +95,13 @@ header {
 
     list-style-type: none;
     margin-left: 20px;
-    padding-top: 60px;
+    padding: 80px 20px 10px 20px;
 
     position: absolute;
-    top: -40%;
-    left: -73%;
-    border-radius: 15px;
+    top: -45%;
+    left: -120%;
+    border-radius: 10px;
+    width: 200px;
 
     background-color: #009CA6;
     z-index: 1;
@@ -104,6 +112,7 @@ header {
     border-bottom: 1px solid #FFFFFF;
     margin: 5px;
     text-align: center;
+    padding: 10px;
   }
   
 .menu li:last-of-type {
@@ -118,7 +127,7 @@ header {
     position: relative;
 }
 
-.dropdown > span {
+.dropdown > .menu-icon {
     z-index: 2;
     position: relative;
 }
@@ -163,7 +172,7 @@ header {
 .home p {
     font-size: 20px;
     margin-top: 30px;
-    font-family: "Coming Soon", cursive;
+    font-family: "Nunito-Sans", cursive;
     font-weight: bold;
 }
 
@@ -200,7 +209,7 @@ article {
 
     background-color: #FFFFFF;
     color: #072A6C;
-    font-family: "Coming-Soon", sans-serif;
+    font-family: "Nunito-Sans", sans-serif;
 }
 
 .section-grid {
@@ -222,11 +231,12 @@ section {
     width: 100%;
     height: fit-content;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     margin: 20px;
     border: 2px solid #009CA6;
     border-radius: 50px;
     box-shadow: 4px 4px 4px #00727a;
+    list-style-type: none;
 }
 
 section h1 {
@@ -235,8 +245,14 @@ section h1 {
     border-bottom: 1px solid #009CA6;
 }
 
+.skills-list {
+    padding: 20px;
+    color: #009CA6;
+    font-weight: bold;
+}
+
 .section-text p {
-    padding: 15px;
+    padding: 10px;
 }
 
 .Portfolio {
@@ -252,9 +268,8 @@ figure img {
     justify-content: center;
     width: 250px;
     padding: 20px;
-    border-radius: 50%;
+    border-radius:50%;
 }
-
 
 
                                                 /* Footer */
@@ -294,7 +309,7 @@ footer {
 .form-row input,
 .form-row textarea {
     background-color: #062257;
-    font-family: "Coming Soon", cursive;
+    font-family: "Nunito-Sans", cursive;
     color: #FFFFFF;
     font-size: 13px;
     width: 70%; 
@@ -315,7 +330,7 @@ footer {
     padding: 10px 20px;
     border-radius: 15px;
     border: none;
-    font-family: "Coming Soon", cursive;
+    font-family: "Nunito-Sans", cursive;
     font-size: 20px;
     font-weight: bold;
     color: #FFFFFF;
@@ -358,12 +373,8 @@ footer {
         height: 50px;
         width: 100%;
         background-color: transparent;
-        justify-content: space-between;
+        justify-content: flex-start;
         border-top: 5px solid #009CA6; 
-    }
-
-    .menu-comtainer {
-        justify-content: center;
     }
 
     .home-container {
@@ -375,7 +386,6 @@ footer {
     article {
         display: flex;
         display: -webkit-flex;
-        flex-direction: row;
         align-items: center;
         justify-content: center;
         height: fit-content;
@@ -383,16 +393,15 @@ footer {
     }
 
     .section-grid {
+        display: flex;
+        display: -webkit-flex;
+        flex: wrap;
+        flex: -webkit-wrap;
+
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-        width: 900px;
-        flex: initial;
-    }
-
-    .footer-container {
-        flex: initial;
-    }
-
+        width: 80%;
+    } 
 }
 

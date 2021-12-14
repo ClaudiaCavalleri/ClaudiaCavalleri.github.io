@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="styles.css"/>
 
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Fleur+De+Leah&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
         </style>
 
     </head>
@@ -16,18 +16,25 @@
         <header>
             <div class="navbar-container">
                 <nav class="menu-container">
-                    <li class="dropdown"><span>Menu</span>
+                    <li class="dropdown">
+                        <div class="menu-icon">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    
                         <ul class="menu">
+                            <li><a href="#home">Home</a></li>
                             <li><a href="#About-me">About me</a></li>
                             <li><a href="#Portfolio">Portfolio</a></li>
-                            <li><a href="#Studies">Studies</a></li>
+                            <li><a href="#skills">Skills</a></li>
                             <li><a href="#contact">Contact me</a></li>
                         </ul>
                     </li>
                 </nav>
             </div>
             <div class="home-container">
-                <a name="home">
+                <a name="home">     
                     <div class="home">
                         <h1 class="name">Claudia Cavalleri</h1>
                         <h2 class="profile">Junior Web Developer</h2>
@@ -49,21 +56,23 @@
             <div class="section-grid">
                 <section class="About-me">
                     <a name="About-me">
-                      <h1>About Me</h1>
+                    <h1>About Me</h1>
                       
-                      <div class="section-text section-text-about-me">
+                    <div class="section-text section-text-about-me">
                         <p>Hello, fellows!</p>
-                        <p>My name is Claudia and I'm a Junior Web Developer (or at least I'm studying for this), based in Italy.</p>
+                        <p>I'm Claudia and I'm a Junior Web Developer (or at least I'm studying for this).</p>
                         <p>I'm passionate in technology, good food and flowery.</p> 
                         <p>I also love fantasy books and films.</p>
                         <p>My mission is to learn day-by-day to create out of nowhere awesome web pages .</p>
                         <p>It's a long road, but we'll enjoy the trip for sure.</p>
                         <p>For this reasons I'm open to value and cooperate for free in interesting new projects.</p>
-                      </div>
+                    </div>
 
-                      <figure>
-                          <img src="assets/img/photo-profile.jpg" alt="Profile-photo"/>
-                      </figure>
+                    <div class="portrait">
+                        <figure>
+                            <img src="assets/img/photo-profile.jpg" alt="Profile-photo"/>
+                        </figure>
+                    </div>
                     </a>
                 </section>
 
@@ -78,15 +87,18 @@
                     </a>
                 </section>
 
-                <section class="Studies">
-                    <a name="Studies">
-                        <h1>My studies</h1>
+                <section class="skills">
+                    <a name="skills">
+                        <h1>My skills</h1>
                     
-                        <div class="section-text section-text-studies">
-                            <p>I always loved to deal with technology since I was a child, so, obviously, I went to a Human sciences High School in my town.</p>
-                            <p>This path doesn't satisfy me at the end, that's why I came back to my roots studying environmental engineering.</p>
-                            <p>And now here I am, thanks to <a id="s2i" href="https://www.start2impact.it" target="_blank">Start2impact</a>, 
-                                spending my time developing web pages.</p>
+                        <div class="skills-list">
+                            <p>HTML5 , CSS3</P>
+                        </div>
+                        <div class="section-text section-text-skills">
+                            <p>I always loved to deal with technology since I was a child.</p>
+                            <p>I'm graduated in human sciences and then I studied environmental engineering.</p>
+                            <p>And now, thanks to <a id="s2i" href="https://www.start2impact.it" target="_blank">Start2impact</a>, 
+                                I spend my time developing web pages.</p>
                         </div>
                     </a>
                 </section>
@@ -113,7 +125,7 @@
                                        placeholder="giuseppe.garibaldi@gmail.com"/>
                             </div>
                             <div class="form-row">
-                                <label for="country">Country / City</label>
+                                <label for="country">Country</label>
                                 <input id="country" name="country" type="text" placeholder="Milan, Italy"/>
                             </div>
                             <div class="form-row">
