@@ -54,7 +54,7 @@ article > .container-sm h1 {
 }
 
 @media only screen and (max-width: 600px) {
-    home h1 {
+    .home h1 {
         font-size: 40px;
     }
 }
