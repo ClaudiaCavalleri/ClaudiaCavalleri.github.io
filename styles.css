@@ -57,4 +57,7 @@ article > .container-sm h1 {
     .home h1 {
         font-size: 40px;
     }
+    article > .container-sm h1 {
+        font-size: 25px;
+    }
 }
