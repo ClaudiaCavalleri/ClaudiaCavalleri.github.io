@@ -20,7 +20,7 @@ a {
 }
 
 .name img {
-    max-width: 500px;
+    max-width: 700px;
 }
 
 article > .container-sm h1 {
@@ -49,9 +49,9 @@ article > .container-sm h1 {
     transform: translateY(-20px);
 }
 
-@media only screen and (max-width: 600px) {
-    .home h1 {
-        font-size: 40px;
+@media only screen and (max-width: 900px) {
+    .name img {
+        max-width: 400px;
     }
     article > .container-sm h1 {
         font-size: 25px;
