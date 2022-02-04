@@ -49,11 +49,17 @@ article > .container-sm h1 {
     transform: translateY(-20px);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width:600px) and (max-width: 900px) {
     .name img {
         max-width: 400px;
     }
     article > .container-sm h1 {
         font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .name img {
+        max-width: 200px;
     }
 }
