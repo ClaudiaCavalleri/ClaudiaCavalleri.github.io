@@ -13,18 +13,14 @@ a {
     text-decoration: none;
 }
 
-.home h1 {
-    font-family: "amsterdam", cursive;
-    font-size: 80px;
-    color: white;
-    text-shadow: 4px 4px 8px #0095FF;
-    padding-top: 30px;
+.home-container {
+    background-image: url(assets/img/Costruzioni.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
-.home p {
-    font-family: "amsterdam", cursive;
-    font-size: 20px;
-    color: white; 
+.name img {
+    max-width: 500px;
 }
 
 article > .container-sm h1 {
