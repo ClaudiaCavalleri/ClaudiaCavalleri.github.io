@@ -24,10 +24,17 @@ a {
 }
 
 article > .container-sm h1 {
-    font-family: "amsterdam", cursive;
+    font-family: "amsterdam", courier;
     font-size: 35px;
     color: #0095FF;
     padding-top: 20px;
+}
+
+h2 {
+    font-family: "amsterdam", sans-serif;
+    color: #0095FF;
+    font-size: 20px;
+    padding: 30px 0;
 }
 
 .card { 
@@ -47,6 +54,10 @@ article > .container-sm h1 {
 .col:hover .card {
     box-shadow: 0px 45px 20px -30px rgba( 0,0,0,0.2);
     transform: translateY(-20px);
+}
+
+#portfoliocard {
+    max-width: 500px;
 }
 
 @media only screen and (min-width:600px) and (max-width: 900px) {
