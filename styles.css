@@ -9,6 +9,11 @@
     src: url("./assets/font/amsterdam-font/Amsterdam-ZVGqm.ttf") format("woff");
 }
 
+@font-face {
+    font-family: "shortstack";
+    src: url("./assets/font/Short_Stack/ShortStack-Regular.ttf") format("woff");
+}
+
 a {
     text-decoration: none;
 }
@@ -21,6 +26,20 @@ a {
 
 .name img {
     max-width: 700px;
+}
+
+#name > h1 {
+    font-family: "shortstack", sans-serif;
+    font-size: 100px;
+    color: #FFFFFF;
+    text-shadow: 4px 4px 6px #000000;
+}
+
+#name > h2 {
+    font-family: "shortstack", sans-serif;
+    font-size: 30px;
+    color: #FFFFFF;
+    text-shadow: 4px 4px 6px #000000;
 }
 
 article > .container-sm h1 {
@@ -72,5 +91,11 @@ h2 {
 @media only screen and (max-width: 599px) {
     .name img {
         max-width: 200px;
+    }
+    #name > h1 {
+        font-size: 70px;
+    }
+    #name > h2 {
+        font-size: 20px;
     }
 }
